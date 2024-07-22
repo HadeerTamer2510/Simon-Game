@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link href='https://fonts.googleapis.com/css?family=Press Start 2P' rel='stylesheet'>
+    
+    <style>
+        body {
+            background-color: rgb(2, 33, 41);
+            font-family: 'Press Start 2P';
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: rgb(230, 237, 181);
+            font-size: 50px;
+            margin-top: 50px;
+        }
+        
+        .button {
+          border-color:black;
+border-radius: 2.5rem;
+  padding: 70px 70px;
+  text-align: center;
+  display:inline-block;
+  cursor: pointer;  
+        }
+        #green {
+          margin-left: 150px;
+           margin-top: 70px;
+            background-color: green;
+        }
+        #red {
+          margin-left: 200px;
+            margin-top: 70px;
+            background-color: red;
+        }
+        #yellow{
+          margin-top: 70px;
+            margin-left: 150px;
+            
+            background-color: yellow;
+          
+        }
+        #blue {
+          margin-left: 200px;
+          margin-bottom: 400;
+            margin-top: 70px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+   <h1 id="text">Press A Key to Start</h1>
+   <div class="head">
+       <div id="green" class="button" onclick="Sound('green')"></div>
+       <div id="red" class="button" onclick="Sound('red')"></div><br>
+       <div id="yellow" class="button" onclick="Sound('yellow')"></div>
+       <div id="blue" class="button" onclick="Sound('blue')"></div>
+   </div>
+   <audio id="green-sound" src="WhatsApp Audio 2024-07-22 at 20.24.42_51a5e7d3.mp3"></audio>
+   <audio id="red-sound" src="WhatsApp Audio 2024-07-22 at 20.24.41_07f96d50.mp3"></audio>
+   <audio id="yellow-sound" src="WhatsApp Audio 2024-07-22 at 20.24.43_933f5fe2.mp3"></audio>
+   <audio id="blue-sound" src="WhatsApp Audio 2024-07-22 at 20.24.43_9da90b2d.mp3"></audio>
+   <audio id="error-sound" src="WhatsApp Audio 2024-07-22 at 20.24.44_de93e99d.mp3"></audio>
+
+<script src="main.js">
+</script>
+</body>
+</html>
